@@ -53,6 +53,10 @@ function calculatePlayerCardValue(cards) {
       // 플레이어의 카드 총합 계산
       const totalValue = calculatePlayerCardValue(player_card);
       console.log("총점:", totalValue);
+         
+      // 플레이어의 카드 총합을 화면에 출력
+      document.querySelector("#player_blackjack_point").textContent = totalValue;
+
   
       // 총합이 21을 초과하는지 확인
       if (totalValue > 21) {
